@@ -281,7 +281,8 @@ uint32_t conn_mw_ble_enable(uint8_t const * const p_rx_buf,
     uint32_t app_ram_base;
 
 /*lint --e{10} --e{19} --e{27} --e{40} --e{529} -save suppress Error 27: Illegal character */
-#if defined(_WIN32) ||  defined(__unix) || defined(__APPLE__)
+//#if defined(_WIN32) ||  defined(__unix) || defined(__APPLE__)
+#if 0
     uint32_t ram_start = 0;
 #elif defined ( __CC_ARM )
     extern uint32_t Image$$RW_IRAM1$$Base;
@@ -386,7 +387,8 @@ uint32_t conn_mw_ble_cfg_set(uint8_t const * const p_rx_buf,
     uint32_t app_ram_base;
 
 /*lint --e{10} --e{19} --e{27} --e{40} --e{529} -save suppress Error 27: Illegal character */
-#if defined(_WIN32) ||  defined(__unix) || defined(__APPLE__)
+//#if defined(_WIN32) ||  defined(__unix) || defined(__APPLE__)
+#if 0
     uint32_t ram_start = 0;
 #elif defined ( __CC_ARM )
     extern uint32_t Image$$RW_IRAM1$$Base;

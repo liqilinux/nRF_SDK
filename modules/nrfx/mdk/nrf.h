@@ -86,15 +86,14 @@ OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     #endif
 #endif
 
-
-#if defined(_WIN32)
-    /* Do not include nrf specific files when building for PC host */
-#elif defined(__unix)
-    /* Do not include nrf specific files when building for PC host */
-#elif defined(__APPLE__)
-    /* Do not include nrf specific files when building for PC host */
-#else
-
+// #if defined(_WIN32)
+//     /* Do not include nrf specific files when building for PC host */
+// #elif defined(__unix)
+//     /* Do not include nrf specific files when building for PC host */
+// #elif defined(__APPLE__)
+//     /* Do not include nrf specific files when building for PC host */
+// #else
+#if 1
     /* Device selection for device includes. */
     #if defined (NRF51)
         #include "nrf51.h"

@@ -44,13 +44,15 @@ OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 /*lint ++flb "Enter library region */
 
-#if defined(_WIN32)
-    /* Do not include nrf specific files when building for PC host */
-#elif defined(__unix)
-    /* Do not include nrf specific files when building for PC host */
-#elif defined(__APPLE__)
-    /* Do not include nrf specific files when building for PC host */
-#else
+// #if defined(_WIN32)
+//     /* Do not include nrf specific files when building for PC host */
+// #elif defined(__unix)
+//     /* Do not include nrf specific files when building for PC host */
+// #elif defined(__APPLE__)
+//     /* Do not include nrf specific files when building for PC host */
+// #else
+
+#if 1
 
     #if defined(NRF51)
         #include "nrf51_peripherals.h"
